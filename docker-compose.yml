@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  database:
+    image: postgres:14
+    environment:
+      - "POSTGRES_PASSWORD=sample"
+      - "POSTGRES_DB=mydb"
+    ports:
+      - "54328:5432"
